@@ -15,7 +15,7 @@ function validateEmail(value) {
 
     if (regExp.test(value.value)) {
         message.textContent = `You have been subscribed successfully`
-        message.setAttribute('style', 'color: black')
+        value.setAttribute('style', 'color: black; border: solid 0.2rem var(--blue);')
     } else if (value.value === '') {
         message.textContent = `Whoops! It looks like you forgot to add your email`
         value.setAttribute('style', 'border: solid 0.2rem var(--light-red);')
